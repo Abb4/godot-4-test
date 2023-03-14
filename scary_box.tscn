@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://c0mewetfjatli"]
+[gd_scene load_steps=4 format=3 uid="uid://c0mewetfjatli"]
+
+[ext_resource type="Script" path="res://Box.cs" id="1_bbpax"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_bk2e7"]
 
@@ -8,6 +10,7 @@
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_bk2e7")
+script = ExtResource("1_bbpax")
 
 [node name="RigidBody3D" type="RigidBody3D" parent="MeshInstance3D"]
 
