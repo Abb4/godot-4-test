@@ -1,0 +1,1 @@
+Project for testing how [godot](https://godotengine.org/) 4 works with csharp.
