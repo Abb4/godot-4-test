@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0mewetfjatli"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bk2e7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_altqu"]
+
+[node name="ScaryBox" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_bk2e7")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/RigidBody3D"]
+shape = SubResource("BoxShape3D_altqu")
+metadata/Box = false
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 3, 4)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2)
